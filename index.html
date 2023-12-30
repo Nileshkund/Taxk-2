@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+  <div class="container">
+    <div class="buttons">
+      <button onclick="showShoppingCart()">Shopping Cart</button>
+      <button onclick="showCheckoutDetails()">Checkout Details</button>
+      <button onclick="showOrderComplete()">Order Complete</button>
     </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
-</body>
 
+    <div id="shoppingCart" class="card">
+      <img src="Paste image (1).png" alt="Product 1">
+      <img src="Paste image (2).png" alt="Product 2">
+      <img src="Paste image.png" alt="Product 3">
+      <p>Order Code: ABC123</p>
+      <p>Date: January 1, 2023</p>
+      <p>Total: $50.00</p>
+      <p>Payment Method: Credit Card</p>
+      <button class="checkout-button" onclick="proceedToNextPage()">Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
