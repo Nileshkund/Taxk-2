@@ -4,10 +4,35 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
+  background-color: #ffffff; /* White background */
 }
 
 .container {
   text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #3498db; /* Blue background */
+}
+
+.logo {
+  color: #ffffff; /* White text color */
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.counter {
+  background-color: #e74c3c; /* Red background */
+  color: #ffffff; /* White text color */
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 18px;
 }
 
 .buttons {
@@ -16,22 +41,59 @@ body {
   margin-bottom: 20px;
 }
 
+.animated-button {
+  animation: bounce 0.5s ease infinite; /* Example animation: bounce */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
 .card {
-  border: 1px solid #ccc;
+  border: none; /* Remove border */
   padding: 20px;
   width: 300px;
+  background-color: #ecf0f1; /* Background color: a light grayish-blue */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Improved box shadow */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Enhanced box shadow on hover */
 }
 
 .card img {
   width: 80px;
   height: 80px;
   margin: 10px;
+  border-radius: 50%; /* Circular border for images */
+  transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.card img:hover {
+  transform: scale(1.2); /* Scale up on hover */
 }
 
 .checkout-button {
-  background-color: #4caf50;
+  background-color: #f39c12; /* Orange color for the button */
   color: white;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.checkout-button:hover {
+  background-color: #e67e22; /* Darker orange on hover */
 }
